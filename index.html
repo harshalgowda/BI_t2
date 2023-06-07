@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance Tracking</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <center><div id="registrationPage">
+    <h2>Registration</h2>
+    <form id="registrationForm">
+      <label for="username">Username : </label>
+      <input type="text" id="username" required><br/>
+      <br/>
+      <label for="password">Password : </label>
+      <input type="password" id="password" required><br/>
+      <br/>
+      <button type="submit">Register</button>
+    </form>
+  </div></center>
+
+  <center><div id="loginPage" style="display: none;">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required><br/>
+      <br/>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required><br/>
+      <br/>
+      <button type="submit">Login</button>
+    </form>
+  </div></center>
+
+  <div id="attendancePage" style="display: none;">
+    <h2> Attendance Register </h2>
+    <table id="attendanceTable">
+      <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Attendance</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Harshal</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Monish</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Vishwas</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>104</td>
+        <td>Amrutha</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+     <tr>
+        <td>105</td>
+        <td>Sindhu</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+    <tr>
+        <td>106</td>
+        <td>Chaitra</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>107</td>
+        <td>Prathyusha</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+      <td>108</td>
+        <td>Manya</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+      <td>109</td>
+        <td>Vijay</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+      <td>110</td>
+        <td>Bruhat</td>
+        <td>
+          <select onchange="recordAttendance(this)">
+            <option value="" disabled selected>Select</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <div id="summary">
+      <p>Absent: <span id="absentCount">0</span></p>
+      <p>Present: <span id="presentCount">0</span></p>
+      <center><button>Submit</button></center>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
